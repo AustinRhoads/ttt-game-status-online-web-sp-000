@@ -14,7 +14,10 @@ WIN_COMBINATIONS = [
   [2,5,8],
   [1,4,7],
 ]
+#won needs to take in the board and the win combinations
 #
+#it needs check the indexes of each combo on the board
+#if any index combo is all Xs or all Os declare true
 def won?(board,combos)
 
 end
