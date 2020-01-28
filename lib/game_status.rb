@@ -25,7 +25,7 @@ def won?(board)
   else
 WIN_COMBINATIONS.each do |win|
   win.any? {board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]]}
-    
-    
+
+
   end
 end
