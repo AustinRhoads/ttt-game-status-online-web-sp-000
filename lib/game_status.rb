@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 #won needs to take in the board and the win combinations
 #
 #it needs check the indexes of each combo on the board
+#for each board[WIN_COMBINATIONS[]]
 #if any index combo is all Xs or all Os declare true
 def won?(board,combos)
 
