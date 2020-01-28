@@ -23,9 +23,9 @@ def won?(board)
   if board.all? == " " || board.all? == nil
     return nil
   else
-WIN_COMBINATIONS.each do |win|
-  win.any? {board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]]}
+WIN_COMBINATIONS.any? do |win|
+ board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]]
 
-
+    end
   end
 end
