@@ -20,8 +20,9 @@ WIN_COMBINATIONS = [
 #for each board[WIN_COMBINATIONS[]]
 #if any index combo is all Xs or all Os declare true
 def won?(board)
-if board.all? == " "
+if board.all? == " " || board.all? == nil
   return nil
+else
 
 
 
