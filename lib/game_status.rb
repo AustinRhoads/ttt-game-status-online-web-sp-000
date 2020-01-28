@@ -50,8 +50,12 @@ if won?(board) != nil || draw?(board) == true
 end
 end
 
-def winner
-
+def winner(board)
+if over?(board) == true && won?(board) == true
+  return board[won?(board)[0]]
+else
+  return nil
+end
 end
 
 
