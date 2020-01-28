@@ -20,7 +20,10 @@ WIN_COMBINATIONS = [
 #for each board[WIN_COMBINATIONS[]]
 #if any index combo is all Xs or all Os declare true
 def won?(board)
-WIN_COMBINATIONS.each do |combo|
-  !!(board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] )
+if board.all? == " "
+  return nil
+
+  
+  
   end
 end
