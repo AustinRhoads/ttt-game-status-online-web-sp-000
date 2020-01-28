@@ -23,8 +23,8 @@ def won?(board)
   if board.all? == " " || board.all? == nil
     return nil
   else
-WIN_COMBINATIONS.select do |win|
- board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]]
+WIN_COMBINATIONS.detect do |win|
+ board[win[0]] == "X" && board[win[1]] == "X" && board[win[2]] == "X" 
 
     end
   end
