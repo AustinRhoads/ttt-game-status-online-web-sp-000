@@ -23,7 +23,7 @@ def won?(board)
 if board.all? == " "
   return nil
 
-  
-  
+
+
   end
 end
