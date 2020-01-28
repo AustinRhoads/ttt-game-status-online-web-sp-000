@@ -30,3 +30,8 @@ WIN_COMBINATIONS.detect do |win|
     end
   end
 end
+
+def full?(board)
+  board.none? do |i| i == " " || i == ""
+  end
+end
