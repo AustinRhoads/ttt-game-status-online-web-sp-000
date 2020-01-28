@@ -20,11 +20,12 @@ WIN_COMBINATIONS = [
 #for each board[WIN_COMBINATIONS[]]
 #if any index combo is all Xs or all Os declare true
 def won?(board)
-if board.all? == " " || board.all? == nil
-  return nil
-else
-
-
-
+  if board.all? == " " || board.all? == nil
+    return nil
+  else
+WIN_COMBINATIONS.each do |win|
+  win.any? {board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]]}
+    
+    
   end
 end
