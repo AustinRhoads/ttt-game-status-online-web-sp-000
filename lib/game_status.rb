@@ -19,8 +19,8 @@ WIN_COMBINATIONS = [
 #it needs check the indexes of each combo on the board
 #for each board[WIN_COMBINATIONS[]]
 #if any index combo is all Xs or all Os declare true
-def won?(board, WIN_COMBINATIONS)
-WIN_COMBINATIONS.each do |combo|
+def won?(board, wins)
+wins.each do |combo|
   !!(board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] )
   end
 end
