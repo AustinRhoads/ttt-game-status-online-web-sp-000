@@ -49,3 +49,10 @@ if won?(board) != nil || draw?(board) == true
   return true
 end
 end
+
+def winner
+
+end
+
+
+  
