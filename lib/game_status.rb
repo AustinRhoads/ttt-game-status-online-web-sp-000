@@ -24,7 +24,7 @@ def won?(board)
     return nil
   else
 WIN_COMBINATIONS.detect do |win|
- board[win[0]] == "X" && board[win[1]] == "X" && board[win[2]] == "X" 
+ board[win[0]] == "X" && board[win[1]] == "X" && board[win[2]] == "X"
 
     end
   end
